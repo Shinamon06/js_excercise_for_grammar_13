@@ -26,14 +26,14 @@ const myArray = {
     }
   },
   map: function (callback) {
-    returnedValues = [];
+    const returnedValues = [];
     this.forEach((value, index) => {
       returnedValues.push(callback(value, index));
     });
     return returnedValues;
   },
   filter: function (callback) {
-    returnedValues = [];
+    const returnedValues = [];
     this.forEach((value, index) => {
       if (callback(value, index)) {
         returnedValues.push(value);
